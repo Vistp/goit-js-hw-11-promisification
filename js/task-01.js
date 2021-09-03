@@ -1,6 +1,24 @@
+// ------длинно варик 1------
+// const delay = ms => {
+//     // Твой код
+//     const promise = new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(ms);
+//         }, ms)
+//     });
+//     return promise;
+// };
+
+// ------варик 2-------
 const delay = ms => {
-  // Твой код
+    // Твой код
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(ms);
+        }, ms)
+    });
 };
+
 
 const logger = time => console.log(`Resolved after ${time}ms`);
 
